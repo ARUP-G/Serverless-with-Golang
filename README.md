@@ -1,6 +1,6 @@
 # Serverless with Golang
 
-This serverless application is built using **Golang** to leverage its efficiency and concurrency features, providing a highly scalable and reliable backend service. It follows the serverless architecture paradigm by utilizing **AWS Lambda** for compute, **Amazon DynamoDB** for persistent data storage, and Amazon **API Gateway** for request handling and routing.
+This serverless application (REST API) is built using **Golang** to leverage its efficiency and concurrency features, providing a highly scalable and reliable backend service. It follows the serverless architecture paradigm by utilizing **AWS Lambda** for compute, **Amazon DynamoDB** for persistent data storage, and Amazon **API Gateway** for request handling and routing.
 
 This architecture ensures cost-effectiveness by eliminating the need for dedicated servers while maintaining scalability and high availability, making it ideal for modern cloud-native applications.
 
