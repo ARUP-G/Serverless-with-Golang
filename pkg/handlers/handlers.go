@@ -13,7 +13,7 @@ import (
 var ErrorMethodNotAllowed = "method not allowed"
 
 type ErrorBody struct {
-	ErrorMsg *string `json:"error, omitempty"`
+	ErrorMsg *string `json:"error,omitempty"`
 }
 
 func GetUser(req events.APIGatewayProxyRequest, tableName string, dynaClient dynamodbiface.DynamoDBAPI) (*events.APIGatewayProxyResponse, error) {
