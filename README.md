@@ -65,6 +65,7 @@ Serverless-with-Golang/
         - **Partition Key**: email (String)
       - Select **On-demand capacity mode (Pay-per-request)** for flexibility.
       - Click **Create table**.
+      ![DBTAble](image/db.png)
 
    2. **Create a Lambda Function**
       - Go to the Lambda Console: [Lambda Console](https://console.aws.amazon.com/lambda).
@@ -76,6 +77,7 @@ Serverless-with-Golang/
         - **Architecture**: x86_64
       - Under **Permissions**, create a new role with basic Lambda permissions.
       - Click **Create function**.
+      ![Lamda func](image/lambda.png)
 
    3. **Upload the Code**
       - Scroll to the **Code source** section.
@@ -86,6 +88,7 @@ Serverless-with-Golang/
         zip deployment.zip bootstrap
         ```
       - Upload the `deployment.zip` file and click **Save**.
+      ![Deployment](image/zip.png)
 
    4. **Add Environment Variables (Optional)**
       - Scroll to the **Configuration** tab and click **Environment variables**.
@@ -112,6 +115,7 @@ Serverless-with-Golang/
         - Click **Deployments** under your API name.
         - Select **Create** and provide a stage name (e.g., prod).
         - Click **Deploy**.
+      ![api-gateway](image/api-gate.png)
 
 4. **Test the Setup**
 
