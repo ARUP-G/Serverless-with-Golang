@@ -51,7 +51,10 @@ Serverless-with-Golang/
 
 2. **Build the Go Application**
    ```bash
+   # For Linux user
    GOOS=linux GOARCH=amd64 go build -o bootstrap cmd/main.go
+   #For windows user
+   $env:GOOS="windows"; $env:GOARCH="amd64"; go build -o bootstarp cmd/main.go
    # This builds the Go application compatible with AWS Lambda's environment.
    ```
 
@@ -84,7 +87,6 @@ Serverless-with-Golang/
       - Click **Upload from** and select **.zip file**.
       - Prepare your .zip file by building your Go application:
         ```bash
-        GOOS=linux GOARCH=amd64 go build -o bootstrap cmd/main.go
         zip deployment.zip bootstrap
         ```
       - Upload the `deployment.zip` file and click **Save**.
