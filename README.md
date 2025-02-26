@@ -54,7 +54,7 @@ Serverless-with-Golang/
    # For Linux user
    GOOS=linux GOARCH=amd64 go build -o bootstrap cmd/main.go
    #For windows user
-   $env:GOOS="windows"; $env:GOARCH="amd64"; go build -o bootstarp cmd/main.go
+   $env:GOOS="linux"; $env:GOARCH="amd64"; go build -o bootstarp cmd/main.go
    # This builds the Go application compatible with AWS Lambda's environment.
    ```
 
