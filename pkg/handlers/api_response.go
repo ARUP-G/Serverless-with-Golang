@@ -1,18 +1,23 @@
 package handlers
 
 import (
-	"encoding/json"
+	"fmt"
 
 	"github.com/aws/aws-lambda-go/events"
 )
 
 func apiResponse(status int, body interface{}) (*events.APIGatewayProxyResponse, error) {
+	message := body
 	resp := events.APIGatewayProxyResponse{
-		Headers: map[string]string{"Content-Type": " application/json"},
+		StatusCode: status,
+		Body:       fmt.Sprintf("%v", message),
+		Headers: map[string]string{
+			"Content-Type":                 "text/plain",
+			"Access-Control-Allow-Origin":  "https://serverless-with-golang-frontend.vercel.app",
+			"Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+			"Access-Control-Allow-Headers": "Content-Type",
+		},
 	}
-	resp.StatusCode = status
 
-	stringBody, _ := json.Marshal(body)
-	resp.Body = string(stringBody)
 	return &resp, nil
 }
