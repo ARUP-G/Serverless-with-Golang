@@ -142,3 +142,8 @@ Serverless-with-Golang/
      - Go to the DynamoDB Console, select the table, and click **Delete table**.
    - **API Gateway**:
      - Go to the API Gateway Console, select the API, and click **Delete API**.
+## 🛠️ Contributing
+Contributions are welcome! Please submit a PR or open an issue.
+
+## 📜 License
+This project is licensed under the **MIT License**.
